@@ -13,8 +13,9 @@ from time import sleep
 
 
 #Set options for not prompting DevTools information
-options = Options()
+options = webdriver.ChromeOptions()
 options.add_experimental_option("excludeSwitches", ["enable-logging"])
+options.add_argument("--headless")
 
 URL1 = "https://theardentgoblin.wordpress.com/"
 
